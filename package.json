@@ -1,0 +1,30 @@
+{
+  "name": "fasfu",
+  "version": "1.0.0",
+  "description": "Proyect for Professional Web Development Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexis-dev508/fasfu.git"
+  },
+  "keywords": [
+    "Fasfu",
+    "comida",
+    "delivery",
+    "food",
+    "entregas",
+    "restaurantes"
+  ],
+  "author": "Jesus Alexis Peinado Cabrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexis-dev508/fasfu/issues"
+  },
+  "homepage": "https://github.com/Alexis-dev508/fasfu#readme",
+  "dependencies": {
+    "firebase": "^9.6.2"
+  }
+}
