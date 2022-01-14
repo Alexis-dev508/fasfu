@@ -1,0 +1,50 @@
+
+.btn-grad {background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%)}
+.btn-grad {
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+border-radius: 10px;
+
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+}
+
+.btn-grad:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}
+.carousel{
+width: 100vw;
+   
+}
+.carousel img{
+    height: 90vh;
+}
+@media screen and (min-width: 320px){
+    .carousel{
+        height: 70vh;
+           
+    }
+    .carousel img{
+        height: 70vh;
+           
+    }
+}
+@media screen and (min-width: 600px){
+    .carousel{
+        height: 100vh;
+           
+    }
+    .carousel img{
+        height: 100vh;
+           
+    }
+}

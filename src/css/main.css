@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(46, 46, 46);
+}
+.flag{
+    background-color: white;
+    text-align: center;
+}
+.flag p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding:1rem 0 1rem 0 ;
+}

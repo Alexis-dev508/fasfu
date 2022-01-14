@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre su restaurante</title>
+    <script src="/src/firebase/main_firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore-compat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.1.3-pr5646.6d9dd3616/firebase-storage-compat.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.5.0/firebase-analytics-compat.min.js" integrity="sha512-866swoKg5sP/ps74UHY+vmOPb45Ndx25iS97nRhI6iXvSxZMmPbgEbPXT7mINMWFBVXko0GDyzgTIz3uO424zw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/libraries/jquery-3.6.0/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="src/libraries/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <form action="post">
+        <label for="res_name">
+            <span>Nombre del Restaurante:</span>
+            <input type="text" id="res_name" placeholder="Ej. Mi Restaurante" required/>
+        </label>
+        <label for="res_owner">
+            <span>Nombre del dueño del restaurante:</span>
+            <input type="text" id="res_owner" placeholder="Ej. Pedro Lopez Lopez" required/>
+        </label>
+        <label for="res_schedule">
+            <span>Horario operativo:</span>
+            <input type="text" id="res_schedule" placeholder="Ej. De Lunes a Viernes de 8:00am a 9:00pm" required/>
+        </label>
+        <label for="res_description">
+            <span>Descripcion del restaurante:</span>
+            <textarea id="res_description" required/> </textarea>
+        </label>
+        <label for="res_type">
+            <span>Tipo de restaurante:</span>
+            <select name="res_type" id="res_type">
+                <option value="0" selected>Seleccione un tipo...</option>
+                <option value="1">Restaurante con local</option>
+                <option value="2">Solo envíos a domicilio</option>
+                <option value="3">Con local y a domicilio</option>
+            </select>
+        </label>
+        <label for="res_photo">
+            <span>Suba una fotografia del restaurante:</span>
+            <input type="file" id="res_photo" required/>
+        </label>
+        <input onclick="addRestaurant()" type="button" value="Aceptar" >
+        <input type="button" value="Cancelar">
+      </form>
+
+      <!-- References -->
+      <script src="/src/firebase/main_firebase.js"></script>
+      <script src="src/libraries/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+      <script src="src/firebase/app.js"></script>
+</body>
+
+</html>
